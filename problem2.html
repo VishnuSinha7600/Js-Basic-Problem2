@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+
+
+
+    // 1 Employee Information :
+
+
+const employees = [
+  { name: "John Doe", age: 30, department: "HR", salary: 50000 },
+  { name: "Jane Smith", age: 28, department: "Finance", salary: 60000 },
+  { name: "Alex Johnson", age: 35, department: "IT", salary: 70000 },
+];
+
+
+function employeeInformation(){
+
+    let secondEmployee = employees[1]; 
+
+    return `secondEmployeeName '${secondEmployee.name}' , secondEmployeeDepartment '${secondEmployee.department}' `
+
+
+}
+console.log(employeeInformation(employees)); // Output: { secondEmployeeName: 'Jane Smith', secondEmployeeDepartment: 'Finance' }
+
+
+
+
+
+
+// 2 Average Salary 
+
+const employees2 = [
+  { name: "John Doe", age: 30, department: "HR", salary: 50000 },
+  { name: "Jane Smith", age: 28, department: "Finance", salary: 60000 },
+  { name: "Alex Johnson", age: 35, department: "IT", salary: 70000 },
+];
+
+function averageSalary(){
+let sum = 0
+let average = 0
+
+    for(let i=0; i<employees2.length; i++){
+
+        let salarySum = employees2;
+        
+        sum += salarySum[i].salary;
+5
+       
+    }
+
+    return  average = sum/employees2.length
+}
+
+
+console.log(averageSalary(employees2)); // Output: 60000
+
+
+
+
+// 3 Third Emplopyee Info:
+
+const employees3 = [
+  { name: "John Doe", age: 30, department: "HR", salary: 50000 },
+  { name: "Jane Smith", age: 28, department: "Finance", salary: 60000 },
+  { name: "Alex Johnson", age: 35, department: "IT", salary: 70000 },
+];
+
+function thirdEmployeeInfo(){
+
+   
+
+    let {name : thirdEmployeeName , age : thirdEmployeeAge , salary : thirdEmployeeSalary} = employees3[2]
+
+    let bonus = thirdEmployeeSalary*10/100
+
+
+    return `"Employee : ${thirdEmployeeName}, Age : ${thirdEmployeeAge}, Salary : ${thirdEmployeeSalary}, Bonus : ${bonus}"`
+
+
+}
+
+
+console.log(thirdEmployeeInfo(employees3)); // Output: "Employee: Alex Johnson, Age: 35, Salary: 70000, Bonus: 7000"
+
+
+</script>
+</html>
